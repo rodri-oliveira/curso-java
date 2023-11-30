@@ -14,15 +14,16 @@ public class Main {
         System.out.print("Digite o alvo: ");
         int alvo = sc.nextInt();
 
-        BuscaBinaria busca = new BuscaBinaria();
-        int resultado = busca.buscar(array, alvo);
-
-        if (resultado != -1) {
-            System.out.println(alvo + " foi encontrado na posição " + resultado);
-        } else {
-            System.out.println(alvo + " não encontrado. ");
+        BuscaBinaria busca = new BuscaBinaria(array, alvo);
+        
+        int result = busca.buscar();
+        
+        if(result != -1 ) {
+        	System.out.printf("Alvo %.d encontrado na posição %d", alvo , result);
+        }else {
+        	System.out.println("Alvo não encontrado: ");
         }
-
+        
         sc.close();
     }
 }
