@@ -14,7 +14,7 @@ public class Main {
 		
 		EncontrarPrimos primo = new EncontrarPrimos();
 		
-		ArrayList<Integer> primos = primo.encontrarPrimosAteN(n);
+		ArrayList<Integer> primos = primo.percorreN(n);
 		
 		System.out.println("Lista de numeros primos: " + primos);
 		
