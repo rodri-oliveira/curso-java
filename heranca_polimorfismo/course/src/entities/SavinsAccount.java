@@ -23,4 +23,9 @@ public class SavinsAccount extends Account{
 	public void updateBalance() {
 		balance += balance * interestRate; 
 	}
+	
+	@Override
+	public void withDraw(double amount) {
+		balance -= amount;
+	}
 }
