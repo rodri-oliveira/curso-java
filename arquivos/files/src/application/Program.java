@@ -8,7 +8,7 @@ public class Program {
 
 	public static void main(String[] args) {
 		
-		File file = new File("");
+		File file = new File("C:\\Windows\\System32\\drivers\\etc\\hosts\\");
 		Scanner sc = null;
 		try {
 			if(file.exists() && file.canRead()) {
