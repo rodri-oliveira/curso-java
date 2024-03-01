@@ -44,6 +44,7 @@ public class Program {
 				
 				list.add(new Product(names, price, quantity));
 				itemCsv = br.readLine();
+				
 			}
 			
 			try(BufferedWriter bw = new BufferedWriter(new FileWriter(targetFileStr))){
